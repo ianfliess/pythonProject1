@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nba-v3-quant-skeleton"
+version = "0.2.0"
+description = "Repo scaffold for the V3 NBA quant redesign"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0",
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scikit-learn>=1.3",
+  "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
